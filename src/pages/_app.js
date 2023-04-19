@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@/styles/globals.css'
+import MainContext from '@/context/MainContext';
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return <MainContext><Component {...pageProps} /></MainContext>
 }
